@@ -78,6 +78,8 @@ function App() {
     <div className="container">
       <div className="form">
         <h1>Cadastrar Tarefa</h1>
+        <br />
+        <br />
       <form  onSubmit={id ? editItem : addItem}>
         <input value={title} onChange={(event) => setTitle(event.target.value)} placeholder="Título"/>
 
@@ -101,13 +103,16 @@ function App() {
       <input value={descricao} onChange={(event) => setDescricao(event.target.value)} placeholder="Descrição"/>
       <br />
       <br />
-      <input type="submit" value={id ? "Salvar": "Cadastrar"} />
+      <br />
+      <br />
+      <input className='salvar' type="submit" value={id ? "Salvar": "Cadastrar"} />
       </form>
       </div>
       
       <div className="tarefas">
         <h2>Minhas Tarefas</h2>
         <p>Total: {taskList.length} tarefas</p>
+        <br />
       {taskList.length > 0 ?(
         <ul>
           {taskList.map((item)=>{
@@ -116,10 +121,11 @@ function App() {
               <li key={id}>
                 <h3>{title}</h3>
                 <p>{categoria}</p>
+                <br />
                 <p>{descricao}</p>
                 <p>{data}</p>
-                <button onClick={()=> apagarItem(item.id)}>Apagar</button>
-                <button onClick={()=> preencherEstados(item)} >Editar</button>
+                <button className='apagar' onClick={()=> apagarItem(item.id)}>Apagar</button>
+                <button className='editar' onClick={()=> preencherEstados(item)} >Editar</button>
               </li>
             )
           })}
