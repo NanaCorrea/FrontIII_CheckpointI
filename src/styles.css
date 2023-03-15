@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Shantell Sans', cursive;
+    
+
+
+}
+
+.container{
+    
+    background-color: rgb(51, 3, 95);
+    height: 100vh;
+    
+}
+
+.form{
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    margin-left: 100px;
+    border-radius: 30px;
+    align-items: center;
+    
+}
+
+.tarefas {
+    background-color: aquamarine;
+    margin-left: 650px;
+    border: 1px solid #C7C4C4;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    box-sizing: border-box;
+
+
+
+}
