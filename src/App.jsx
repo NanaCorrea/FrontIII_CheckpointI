@@ -97,7 +97,7 @@ function App() {
       <br />
       <br />
 
-      <input value={data} onChange={(event) => setData(event.target.value)} placeholder="Data"/>
+      <input type={'date'} value={data} onChange={(event) => setData(event.target.value)} placeholder="Data"/>
         <br />
         <br />
       <input value={descricao} onChange={(event) => setDescricao(event.target.value)} placeholder="Descrição"/>
