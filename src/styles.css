@@ -22,13 +22,13 @@
     margin-left: 5vw;
     border-radius: 15px;
     align-items: center;    
-    padding: 15px;
+    padding: 20px;
 }
 
 .tarefas {
     padding: 5vh;
     background-color: rgb(255, 255, 255);
-    margin-left: 50vw;
+    margin-left: 40vw;
     height: 100vh;
 }
 
@@ -62,4 +62,12 @@ button {
     background-color: red;
     color: white;
     padding: 5px;
+}
+
+input {
+    width: 25vw;
+}
+
+select {
+    width: 25vw;
 }
